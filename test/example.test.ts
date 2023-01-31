@@ -1,24 +1,15 @@
-import {
-  setupIntegrationTestEnvironment,
-  tearDownIntegrationTestEnvironment,
-} from "./helpers";
+import { setup, tearDown } from "./helpers";
 
 import { beforeAll, it } from "@jest/globals";
 
 debugger;
 
 beforeAll(async () => {
-  await setupIntegrationTestEnvironment();
-  await tearDownIntegrationTestEnvironment();
+  await setup();
 
   debugger;
 
-  // for (let i = 0; i < 10_000; i++) {
-  //   await setupIntegrationTestEnvironment();
-  //   await tearDownIntegrationTestEnvironment();
-  // }
-
-  debugger;
+  await tearDown();
 });
 
 it.todo("should pass");
