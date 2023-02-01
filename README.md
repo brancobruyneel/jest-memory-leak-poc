@@ -1,6 +1,6 @@
 # Jest Memory Leak PoC
 
-Small proof of concept repo that shows that Jest `29.X` leaks memory using the `mongodb` version `4.x` driver.
+Small proof of concept repo that shows that Jest `29.X` leaks memory using the mongodb `4.x` driver.
 
 ## Environment used
 
