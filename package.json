@@ -29,5 +29,8 @@
   },
   "dependencies": {
     "mongodb": "4.13.0"
+  },
+  "engine": {
+    "node": ">16.10"
   }
 }
