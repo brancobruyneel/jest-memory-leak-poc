@@ -5,7 +5,7 @@ let client: MongoClient | undefined;
 
 beforeAll(async () => {
   client = new MongoClient(
-    process.env.__MONGO_URI__ ?? "mongodb://localhost:27017"
+    process.env.MONGO_URI ?? "mongodb://localhost:27017"
   );
 });
 
