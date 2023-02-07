@@ -13,7 +13,7 @@ Small proof of concept repo that shows that Jest `29.X` leaks memory using the m
   "typescript": "4.9.5"
 },
 "dependencies": {
-  "mongodb": "4.13.0"
+  "mongodb": "4.12.1"
 },
 "engine": {
   "node": ">16.10"
