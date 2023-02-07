@@ -5,8 +5,6 @@ export async function setup(): Promise<void> {
     process.env.MONGO_URI ?? "mongodb://localhost:27017"
   );
 
-  // console.log(await database.stats());
-
   // this leaks memory
   await database.stats();
 }
