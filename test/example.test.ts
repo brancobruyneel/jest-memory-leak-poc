@@ -1,15 +1,15 @@
 import { setup, tearDown } from "./helpers";
 
-import { beforeAll, it } from "@jest/globals";
-
-debugger;
+import { afterAll, beforeAll, expect, it } from "@jest/globals";
 
 beforeAll(async () => {
   await setup();
+});
 
-  debugger;
-
+afterAll(async () => {
   await tearDown();
 });
 
-it.todo("should pass");
+it("should pass", () => {
+  expect(true).toBe(true);
+});
