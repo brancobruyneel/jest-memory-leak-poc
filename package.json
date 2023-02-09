@@ -7,8 +7,8 @@
     "test": "./copy-tests.sh; node --expose-gc --max-old-space-size=256 ./node_modules/.bin/jest --logHeapUsage --runInBand",
     "test:workaround": "./copy-tests.sh; node --expose-gc --max-old-space-size=256 ./node_modules/.bin/jest --logHeapUsage --workerIdleMemoryLimit=256",
     "test:leaks": "npm run test example -- --detectLeaks",
-    "test:debug": "node --max-old-space-size=256 --inspect-brk ./node_modules/.bin/jest --runInBand --logHeapUsage --testTimeout=10000000",
-    "test:debug-mms": "MONGOMS_DEBUG=1 node --max-old-space-size=256 ./node_modules/.bin/jest --runInBand --logHeapUsage --testTimeout=10000000"
+    "test:debug": "node --inspect-brk ./node_modules/.bin/jest debug --testTimeout=10000000",
+    "test:debug-mms": "MONGOMS_DEBUG=1 npm run test:debug"
   },
   "repository": {
     "type": "git",
